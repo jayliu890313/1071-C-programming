@@ -5,3 +5,5 @@ Weak01
 *temp.cpp
 *practice.cpp
 Weak02
+*time.cpp
+*YearJudgment.cpp
