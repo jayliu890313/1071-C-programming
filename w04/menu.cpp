@@ -9,12 +9,12 @@ int main()
     int width;     //長方形的寬
     int stair;     //三角形層數
     int i, j;
-    printf("1.Rectangle\n");
-    printf("2.Vertical Triangle\n");
-    printf("3.exit\n");
-    scanf("%d", &choice);
     while(1)
     {
+        printf("1.Rectangle\n");
+        printf("2.Vertical Triangle\n");
+        printf("3.exit\n");
+        scanf("%d", &choice);
         if(choice != 3)
         {
             switch(choice)
@@ -36,17 +36,16 @@ int main()
                         }
                         printf("\n");
                     }
+
                     break;
                 case 2:
                     while(1)
                     {
-                        printf("type1 , type2 , type3 , type4\n");
+                        printf("Height and Type\n");
                         printf("Enter =>");
-                        scanf("%d", &choice1);
+                        scanf("%d %d", &stair,&choice1);
                         switch(choice1){
                             case 1:
-                                printf("please enter the stair!\n");
-                                scanf("%d", &stair);
                                 for(i = 0; i < stair; i++)
                                 {
                                     for(j = 0; j < stair ; j++)
@@ -62,8 +61,6 @@ int main()
                                 }
                                 break;
                             case 2:
-                                printf("please enter the stair!\n");
-                                scanf("%d", &stair);
                                 for(i = 0; i < stair; i++)
                                 {
                                     for(j = 0; j < stair; j++)
@@ -79,8 +76,6 @@ int main()
                                 }
                                 break;
                             case 3:
-                                printf("please enter the stair!\n");
-                                scanf("%d", &stair);
                                 for(i = 0; i < stair; i++)
                                 {
                                     for(j = 0; j < stair - i; j++)
@@ -96,8 +91,6 @@ int main()
                                 }
                                 break;
                             case 4:
-                                printf("please enter the stair!\n");
-                                scanf("%d", &stair);
                                 for(i = 0; i < stair; i++)
                                 {
                                     for(j = 0; j < stair; j++)
