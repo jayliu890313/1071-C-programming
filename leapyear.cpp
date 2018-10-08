@@ -6,13 +6,13 @@ int main(void)
 	int i;
 	for(i = 0 ; i < 4; i++)
 	{
-		printf("½Ð¿é¤J¦~¥÷§PÂ_¬O§_¬O¶|¦~:");
+		printf("è«‹è¼¸å…¥å¹´ä»½åˆ¤æ–·æ˜¯å¦æ˜¯é–å¹´:");
 		scanf("%d", &year);
 		if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
 		{
-			printf("%d¬°¶|¦~\n", year);
+			printf("%dç‚ºé–å¹´\n", year);
 		}else{
-			printf("%d«D¶|¦~\n", year);
+			printf("%déžé–å¹´\n", year);
 		}
 	}
 	return 0;
